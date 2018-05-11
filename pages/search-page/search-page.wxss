@@ -1,0 +1,106 @@
+/* 顶部搜索栏 */
+page {
+  background-color: #F5F5F5;
+}
+.search-box {
+  position: relative;
+  padding: 16rpx 0;
+  background-color: #FFF;
+}
+.search-box .search-icon {
+  position: absolute;
+  width: 32rpx;
+  height: 32rpx;
+  left: 60rpx;
+  z-index: 999;
+  top: 32rpx;
+}
+.search-box .search-cancel-icon {
+  position: absolute;
+  width: 32rpx;
+  height: 32rpx;
+  right: 60rpx;
+  z-index: 999;
+  top: 32rpx;
+}
+.search-box .search-input {
+  background-color: #F5F6FB;
+  margin: 0 30rpx;
+  height: 28rpx;
+  padding: 6rpx 0;
+  padding-left: 74rpx;
+  font-size: 28rpx;
+  color: #888;
+  line-height: 28rpx;
+  border-radius: 10rpx;
+}
+/* 热门搜索 */
+.top-search-panel {
+  box-sizing: border-box;
+  padding: 40rpx 30rpx;
+  border-top: 2rpx solid #F5F5F5;
+  background-color: #FFF;
+}
+.top-search-panel .title {
+  font-size: 32rpx;
+  line-height: 32rpx;
+  color: #484848;
+  margin-bottom: 30rpx;
+  font-weight: bold;
+}
+.top-search-panel .top-search-labels {
+  display: flex;
+  flex-wrap: wrap;
+}
+.top-search-panel .top-search-labels .label-item {
+  font-size: 28rpx;
+  letter-spacing: -0.68rpx;
+  line-height: 28rpx;
+  color: #484848;
+  box-sizing: border-box;
+  padding: 12rpx 16rpx;
+  border: 2rpx solid #EDEDED;
+  border-radius: 10rpx;
+  margin-right: 20rpx;
+  margin-bottom: 30rpx;
+}
+/* 搜索记录 */
+.search-history {
+  margin-top: 20rpx;
+  background-color: #FFF;
+  padding: 40rpx 30rpx;
+}
+.search-history .title {
+  font-size: 32rpx;
+  line-height: 32rpx;
+  color: #484848;
+  margin-bottom: 30rpx;
+  font-weight: bold;
+}
+.search-history .search-history-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 30rpx 0;
+  box-sizing: border-box;
+  border-bottom: 2rpx solid #F5F5F5;
+}
+.search-history .search-history-list .name {
+  flex: 1;
+  font-size: 24rpx;
+  color: #484848;
+  line-height: 24rpx;
+  letter-spacing: -0.58rpx;
+}
+.search-history .search-history-list image {
+  width: 28rpx;
+  height: 28rpx;
+  flex: 0 0 28rpx;
+}
+.search-history .clear-search-history {
+  padding-top: 30rpx;
+  font-size: 24rpx;
+  color: #888888;
+  letter-spacing: -0.58rpx;
+  line-height: 24rpx;
+  text-align: center;
+}

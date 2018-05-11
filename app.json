@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/buying/buying-detail/buying-detail",
+    "pages/index/index",
+    "pages/buying/buying",
+    "pages/search-page/search-page",
+    "pages/shopping-cart/shopping-cart",
+    "pages/mine/mine",
+    "pages/tea-asset/tea-asset",
+    "pages/storage-charge-page/storage-charge-page",
+    "pages/notification/notification"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "陈升宝",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#888888",
+    "selectedColor": "#FEBB10",
+    "borderStyle": "#EDEDED",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./images/bar-title-icon/index.png",
+        "selectedIconPath": "./images/bar-title-icon/index-s.png"
+      },
+      {
+        "pagePath": "pages/tea-asset/tea-asset",
+        "text": "茶资产",
+        "iconPath": "./images/bar-title-icon/asset.png",
+        "selectedIconPath": "./images/bar-title-icon/asset-s.png"
+      },
+      {
+        "pagePath": "pages/shopping-cart/shopping-cart",
+        "text": "购物车",
+        "iconPath": "./images/bar-title-icon/cart.png",
+        "selectedIconPath": "./images/bar-title-icon/cart-s.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "./images/bar-title-icon/mine.png",
+        "selectedIconPath": "./images/bar-title-icon/mine-s.png"
+      }
+    ]
+  }
+}

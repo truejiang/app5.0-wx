@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "service-bar": "../../../template/service-bar/service-bar"
+  }
+}

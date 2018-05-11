@@ -1,0 +1,79 @@
+<!--pages/index/index.wxml-->
+<view>
+  <!-- 搜索框 -->
+  <view class='searchbar'>
+    <input class='searchbox' data-routes="..\/search-page\/search-page" bindfocus="pageRoutes" value='搜索你感兴趣的茶品吧'></input>
+    <view class='mes' data-routes="..\/notification\/notification" bindtap='pageRoutes'>
+      <view><image class='icon' src='../../images/icons/mes-icon.png'></image></view>
+      消息
+    </view>
+  </view>
+  <!-- 头部banner -->
+  <view class='header-banner'>
+    <image src='../../images/base/index-banner.png'></image>
+  </view>
+  <!-- 头部nav -->
+  <view class='header-nav'>
+    <view class='items' data-routes="..\/buying\/buying" bindtap='pageRoutes'>
+      <view class='icon-bar tea-time'>
+        <image src='../../images/icons/tea-time.png'></image>
+      </view>
+      <text class='title'>限量抢</text>
+    </view>
+    <view class='items'>
+      <view class='icon-bar tea-shoppingbar'>
+        <image src='../../images/icons/tea-shoppingbar.png'></image>
+      </view>
+      <text class='title'>茶商城</text>
+    </view>
+    <view class='items'>
+      <view class='icon-bar tea-bind'>
+        <image src='../../images/icons/tea-bind.png'></image>
+      </view>
+      <text class='title'>茶专题</text>
+    </view>
+  </view>
+  <!-- 首页推荐banner -->
+  <view class='index-recommend-banner'>
+    <view class='banner-header'>
+      <text class='title'>推荐茶品</text>
+      <text class='index-page'>
+        <text class='current-page'>{{recommendPageIndex}}</text>
+        <text class='total-page'>/{{swiperList.length}}</text>
+      </text>
+    </view>
+    <swiper class='swiper-wrapper' bindchange="changeRecommendBanner" circular="true">
+      <block wx:for="{{swiperList}}" wx:key="{{item.id}}">
+        <swiper-item>
+          <view class='item' style='background-image:url({{item.imgUrl}})' bindtap='toPage' data-id="{{item.id}}"></view>
+          <view class='des'>
+            <text class='left'>
+              <text class='name'>{{item.name}}</text>
+              <text class='status'>{{item.status}}</text>
+            </text>
+            <text class='right'>
+              ￥{{item.price}}/{{item.unit}}
+            </text>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- 热搜榜单 -->
+  <view class='top-search'>
+    <view class='title'>热搜榜单</view>
+    <view class='content'>
+      <view class='item' data-routes="..\/buying/buying-detail/buying-detail" bindtap='pageRoutes' wx:for="{{topSearch}}" wx:key="{{item.id}}">
+        <image src='{{item.imgUrl}}'></image>
+        <text class='name'>{{item.name}}</text>
+        <text class='price'>￥{{item.price}}/{{item.unit}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="block"></view>
+  <!-- 首页底部banner -->
+  <view class='foot-banner'>
+    <image src='../../images/base/signup-banner.png'></image>
+    <image src='../../images/base/signup-banner2.png'></image>
+  </view>
+</view>

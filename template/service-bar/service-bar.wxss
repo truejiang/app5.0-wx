@@ -1,0 +1,77 @@
+.wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 100rpx;
+  width: 100%;
+}
+.wrapper .inner-service {
+  height: 100rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;  
+}
+.wrapper .service {
+  flex: 1;
+}
+
+.wrapper .share {
+  flex: 0 0 400rpx;
+  width: 400rpx;
+  height: 100%;
+  background-color: #FEBE10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32rpx;
+  color: #2E2E2E;
+  border: 0;
+  border-radius: 0;
+}
+.wrapper .service {
+  display: flex;
+  justify-content: space-around;
+  background-color: #FFF;
+  align-items: center;
+  border-top: 2rpx solid #ededed; 
+}
+.wrapper .service .item {
+  text-align: center;  
+}
+.wrapper .service .item image {
+  width: 44rpx;
+  height: 44rpx;
+  display: block;
+  margin: auto;
+  margin-bottom: 10rpx;
+}
+
+.wrapper .inner-cart{
+  height: 100rpx;
+  width: 100%;
+  display: flex;
+  background-color: #FFF;
+}
+.wrapper .inner-cart .cart-car {
+  width: 200rpx;
+  flex: 0 0 200rpx;
+  text-align: center;
+  box-sizing: border-box;
+  border-top: 2rpx solid #ededed;
+}
+.wrapper .inner-cart .cart-car image {
+  width: 32rpx;
+  height: 32rpx;
+  display: block;
+  margin: 12rpx auto;
+  margin-bottom: 10rpx;
+}
+.wrapper .inner-cart .buy-btn {
+  background-color: #FEBE10;
+  flex: 1;
+  display: flex;
+  font-size: 32rpx;
+  color: #2E2E2E;
+  justify-content: center;
+  align-items: center;
+}

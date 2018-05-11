@@ -1,0 +1,13 @@
+<!-- 消息列表 -->
+<view class="notification-list" wx:if="{{notifList.length > 0}}" wx:for="{{notifList}}" wx:key="item.id">
+  <view class='header'>
+    <text class='title {{item.unread === 0 ? "unread" : ""}}'>{{item.title}}</text>
+    <text class='time'>{{item.time}}</text>
+  </view>
+  <view class='content'>{{item.content}}</view>
+</view>
+<!-- 空白消息 -->
+<view wx:if="{{notifList.length <= 0}}" class='nullmsg'>
+  <image src='../../images/commom/null-msg.png'></image>
+  <view class='words'>当前无任何消息</view>
+</view>

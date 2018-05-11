@@ -1,0 +1,35 @@
+<!--pages/buying/buying.wxml-->
+<!-- 头部抢购 -->
+<view class='top-buying'>
+  <view class='header'>
+    <image class='icon' src='../../images/icons/notification.png'></image>
+    <text class='words'>公示期  (01/10-01/13)</text>
+  </view>
+  <view class='title'>亲爱的茶友们，我们将于2017年1月3日发售一款新品“鸡饼”，届时欢迎选购。</view>
+  <view class='banner' style='background-image:url("../../images/base/buying-top-banner.png")'>
+    <text class='label'>限购</text>
+  </view>
+  <view class='buy-panel'>
+    <view class='info'>
+      <view class='name'>2017年天韵</view>
+      <view class='inventory'>库存 5,000</view>
+    </view>
+    <view class='buy-btn'>购买</view>
+  </view>
+</view>
+<!-- 底部抢购 -->
+<view class='buying-list'>
+  <view class='list-item'>
+    <view class='img' style='background-image:url("../../images/base/buying-list-img.png")'>
+      <text class='label overtime'>限购</text>
+    </view>
+    <view class='info'>
+      <view class='name'>2017正岩一号</view>
+      <view class='des'>此茶原料选自云南西双版纳高山原生态大叶种大树晒青毛茶</view>
+      <view class='bottom'>
+        <text class='inventory'>库存：0</text>
+        <text class='buying-status overtime'>已结束</text>
+      </view>
+    </view>
+  </view>
+</view>

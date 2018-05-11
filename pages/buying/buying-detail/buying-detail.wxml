@@ -1,0 +1,58 @@
+<!--顶部切换bar-->
+<view class='nav-bar'>
+  <text class='items {{nav === true ? "selected" : ""}}' data-nav-selected="0" bindtap='selectNav'>图文详情</text>
+  <text class='items {{nav === false ? "selected" : ""}}' data-nav-selected="1" bindtap='selectNav'>市场分析</text>
+  <image class='shopping-cart' src='../../../images/bar-title-icon/cart.png'></image>
+</view>
+<!-- 图文详情 -->
+<view class='images-text-detail' wx:if="{{nav === true}}">
+  <!-- 茶品轮播图 -->
+  <swiper class='swiper-wrapper' circular="true" indicator-dots="true" indicator-color="#EDEDED" indicator-active-color="#FEBB10">
+    <block wx:for="{{topImgs}}" wx:key="index">
+      <swiper-item>
+        <view class='item' style='background-image:url({{item}})'></view>
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- 商品信息栏 -->
+  <view class='goods-info'>
+    <view class='header'>
+      <text class='name'>2017年鸡饼500g</text>
+      <text class='inventory'>库存：5,000</text>
+    </view>
+    <view class='price'>￥60,480</view>
+    <view class='prompt'>
+      <text class='label'>限购</text> 此商品仅限购一份，购买之后即成为陈升宝VIP
+    </view>
+  </view>
+  <view class='tips'>
+    陈升号官方茶叶正品保障
+    <image src='../../../images/icons/bao.png'></image>
+    <view class='des'>新茶发售中的所有茶品，均由云南勐海陈升茶业有限公司即“陈升号”提供，正品保障，请广大消费者放心购买。</view>
+  </view>
+  <view class='options'>
+    <view class='title'>参数</view>
+    <view class='table-itme' wx:for="{{optionsList}}" wx:key="{{index}}">
+      <text class='name'>{{item.name}}</text>
+      <text class='value'>{{item.value}}</text>
+    </view>
+    <view class='banner'>
+      <image wx:for="{{banners}}" wx:key="{{index}}" src='{{item}}'></image>
+    </view>
+  </view>
+</view>
+<!-- 市场分析 -->
+<view class='market-analysis' wx:else>
+  <canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas" bindtouchstart="touchHandler"></canvas>
+</view>
+<!-- 开售提醒页 -->
+<view class='sale-to-remind' style="display:{{remindShow===true?'block':'none'}}">
+  <view class='cancel' bindtap='cancelRemindPage'>
+    <image src='../../../images/icons/cancel.png'></image>
+  </view>
+  <view class='remind-time-list' wx:for="{{remindTimeList}}" wx:key="{{item.time}}" data-selected-index="{{index}}" bindtap='selectRemind'>
+    <text class='time'>{{item.value}}</text>
+    <image wx:if="{{item.isSelected}}" src='../../../images/icons/chose.png'></image>
+  </view>
+</view>
+<service-bar bind:saleToRemind="saleToRemind"></service-bar>

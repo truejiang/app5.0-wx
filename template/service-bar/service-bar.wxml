@@ -1,0 +1,24 @@
+<view class="wrapper">
+  <!-- 未到时抢购下面的bar -->
+  <view class='inner-service' wx:if="{{!buyFlag}}">
+    <view class='service'>
+      <view class='item'>
+        <image src='../../images/icons/service.png'></image>
+        <text>客服</text>
+      </view>
+      <view class='item' bindtap='saleToRemind'>
+        <image src='../../images/icons/remind.png'></image>
+        <text>开售提醒</text>
+      </view>
+    </view>
+    <button class='share' open-type='share'>分享给好友</button>
+  </view>
+  <!-- 可以购买时下面的bar -->
+  <view class='inner-cart' wx:else>
+    <view class='cart-car'>
+      <image src='../../images/bar-title-icon/cart.png'></image>
+      加入购物车
+    </view>
+    <view class='buy-btn'>立即购买</view>
+  </view>
+</view>

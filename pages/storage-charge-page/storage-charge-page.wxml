@@ -1,0 +1,38 @@
+<!--pages/storage-charge-page/storage-charge-page.wxml-->
+<!-- 仓储费收取页面 -->
+<view class='storage-charge'>
+  <!-- 应缴费用头 -->
+  <view class='fee-payable'>
+    <text class='name'>当前应缴：</text>
+    <text class='money'>￥{{totalFeePayable}}</text>
+  </view>
+  <!-- 应缴费用列表 -->
+  <view class='item-list' wx:for="{{storageChargeList}}" wx:key="{{item.id}}">
+    <view class='header'>
+      <text class='name'>{{item.name}}</text>
+      <text class='price'>￥{{item.price}}</text>
+    </view>
+    <view class='detail' >
+      <view class='detail-item'>
+        <text class='name'>数量：</text>
+        <text class='value'>{{item.amount}}{{item.amountUnit}}</text>
+      </view>
+      <view class='detail-item'>
+        <text class='name'>过期天数：</text>
+        <text class='value'>{{item.overdueDays}}天</text>
+      </view>
+      <view class='detail-item'>
+        <text class='name'>仓储时间将延至：</text>
+        <text class='value'>{{item.postponeTime}}</text>
+      </view>
+    </view>
+  </view>
+  <!-- 底部结算 -->
+  <view class='pay-panel'>
+    <view class='total'>
+      <text class='tit'>合计：</text>
+      <text class='money'>￥{{totalFeePayable}}</text>
+    </view>
+    <view class='pay-btn'>结算</view>
+  </view>
+</view>

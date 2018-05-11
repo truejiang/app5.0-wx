@@ -1,0 +1,72 @@
+/* 应缴费用头 */
+.storage-charge .fee-payable{
+  border: 2rpx solid #EDEDED;
+  border-left: none;
+  border-right: none;
+  padding: 40rpx 30rpx;
+  font-size: 32rpx;
+  color: #484848;
+  font-family: PingFangSC-Medium;
+  font-weight: bold;
+}
+/* 应缴费用列表 */
+.storage-charge .item-list {
+  padding: 40rpx 30rpx;
+  border-bottom: 2rpx solid #EDEDED;
+}
+.storage-charge .item-list .header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40rpx;
+}
+
+.storage-charge .item-list .header .name{
+  color: #484848;
+  font-size: 32rpx;
+  line-height: 32rpx; 
+}
+.storage-charge .item-list .header .price{
+  color: #FC6345;
+  font-size: 32rpx;
+  line-height: 32rpx;
+}
+.storage-charge .item-list .detail {
+  color: #888888;
+  font-size: 28rpx;
+  line-height: 28rpx;
+}
+.storage-charge .item-list .detail .detail-item {
+  margin-bottom: 30rpx;
+}
+.storage-charge .item-list .detail .detail-item:last-child {
+  margin-bottom: 0;
+}
+/* 底部结算 */
+.pay-panel {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  font-size: 32rpx;
+  color: #484848;
+  line-height: 32rpx;
+}
+.pay-panel .total {
+  padding: 34rpx 0;
+  padding-left: 30rpx;
+  background-color: #fff;
+  box-sizing: border-box;
+  flex: 1;
+  border-top: 2rpx solid #ECECEC;  
+}
+.pay-panel .total .money {
+  color: #FC6345;
+}
+.pay-panel .pay-btn {
+  width: 240rpx;
+  flex: 0 0 240rpx;
+  padding: 34rpx 0;
+  text-align: center;
+  background-color: #FEBE10;
+}

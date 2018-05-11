@@ -1,0 +1,6 @@
+<!--template/search-bar/search-bar.wxml-->
+<view class='search-box'>
+  <image class='search-icon' bindtap='search' src='../../images/commom/search-input-icon.png'></image>
+  <input class='search-input' bindblur="setSearchValue" confirm-type="search" bindconfirm="search" placeholder='{{searchWords}}' value='{{searchValue}}'></input>
+  <image class='search-cancel-icon' bindtap='removeSearchValue' src='../../images/commom/search-input-cancel.png'></image>
+</view>

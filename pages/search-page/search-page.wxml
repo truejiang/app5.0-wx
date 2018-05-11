@@ -1,0 +1,25 @@
+<!-- 顶部搜索栏 -->
+<!-- <view class='search-box'>
+  <image class='search-icon' bindtap='search' src='../../images/commom/search-input-icon.png'></image>
+  <input class='search-input' bindblur="setSearchValue" confirm-type="search" bindconfirm="search" placeholder='搜索你感兴趣的茶品吧' value='{{searchValue}}'></input>
+  <image class='search-cancel-icon' bindtap='removeSearchValue' src='../../images/commom/search-input-cancel.png'></image>
+</view> -->
+<search-box 
+searchWords="{{searchWords}}"
+bind:search="search"></search-box>
+<!-- 热门搜索 -->
+<view class='top-search-panel'>
+  <view class='title'>热门搜索</view>
+  <view class='top-search-labels'>
+    <text class='label-item' wx:for="{{topSeach}}" wx:key="index">{{item}}</text>
+  </view>
+</view>
+<!-- 搜索记录 -->
+<view class='search-history'>
+  <view class='title'>搜索记录</view>
+  <view class='search-history-list' wx:for="{{searchHistory}}" wx:key="index">
+    <text class='name'>{{item}}</text>
+    <image data-search-index="{{index}}" bindtap='removeSingleSearchHistoryStorage' src='../../images/commom/search-history-cancel.png'></image>
+  </view>
+  <view class='clear-search-history'><text bindtap='removeAllSearchHistoryStorage'>清除搜索记录</text></view>
+</view>

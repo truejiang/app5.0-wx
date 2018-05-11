@@ -1,0 +1,158 @@
+/* 头部抢购 */
+page {
+  background-color: #EDEDED;
+}
+.top-buying {
+  background-color: #FFF;
+  padding: 32rpx 30rpx;
+  box-sizing: border-box;
+  margin-top: 2rpx;
+}
+.top-buying .header {
+  margin-bottom: 22rpx;
+}
+.top-buying .header .icon {
+  width: 32rpx;
+  height: 32rpx;
+  vertical-align: top;
+  margin-right: 20rpx;
+}
+.top-buying .header .words {
+  font-size: 32rpx;
+  line-height: 32rpx;
+  color: #484848;
+}
+.top-buying .title {
+  font-size: 28rpx;
+  color: #333;
+  letter-spacing: 0.6rpx;
+  line-height: 40rpx;
+}
+.top-buying .banner {
+  width: 100%;
+  height: 350rpx;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+  margin: 30rpx 0 40rpx 0;
+  position: relative;
+}
+.top-buying .banner .label {
+  background-color: #FC6345;
+  color: #FFF;
+  font-size: 24rpx;
+  line-height: 24rpx;
+  padding: 8rpx 16rpx;
+  border-bottom-left-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+  position: absolute;
+  top: 0;
+  left: 20rpx;
+} 
+.top-buying .buy-panel {
+  display: flex;
+  justify-content: space-between;
+}
+.top-buying .buy-panel .buy-btn {
+  flex: 0 0 150rpx;
+  width: 150rpx;
+  text-align: center;
+  font-size: 28rpx;
+  line-height: 28rpx;
+  color: #2e2e2e;
+  background-color: #FEBE10;
+  border-radius: 10rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top-buying .buy-panel .info .name{
+  font-size: 28rpx;
+  color: #484848;
+  line-height: 28rpx;
+  margin-bottom: 16rpx;
+}
+.top-buying .buy-panel .info .inventory {
+  font-size: 24rpx;
+  line-height: 24rpx;
+  color: #888;
+}
+/* 抢购列表 */
+.buying-list {
+  padding: 40rpx 30rpx;
+  box-sizing: border-box;
+  margin-top: 20rpx;
+  background-color: #FFF;
+}
+.buying-list .list-item {
+  display: flex;
+  justify-content: space-between;
+}
+.buying-list .list-item .img {
+  width: 280rpx;
+  height: 330rpx;
+  flex: 0 0 280rpx;
+  margin-right: 40rpx;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+  position: relative;
+}
+.buying-list .list-item .img .label {
+  background-color: #FC6345;
+  color: #FFF;
+  font-size: 24rpx;
+  line-height: 24rpx;
+  padding: 8rpx 16rpx;
+  border-bottom-left-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+  position: absolute;
+  top: 0;
+  left: 20rpx;
+}
+.buying-list .list-item .img .label.overtime {
+  background-color: #C0C0C0;
+}
+.buying-list .list-item .info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.buying-list .list-item .info .name {
+  margin-top: 36rpx;
+  margin-bottom: 10rpx;
+  font-size: 32rpx;
+  line-height: 32rpx;
+  color: #484848;
+}
+.buying-list .list-item .info .des {
+  font-size: 24rpx;
+  line-height: 34rpx;
+  color: #888888;
+  flex: 1;
+}
+.buying-list .list-item .info .bottom {
+  margin-bottom: 36rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.buying-list .list-item .info .bottom .buying-status {
+  width: 150rpx;
+  height: 68rpx;
+  flex: 0 0 150rpx;
+  color: #FFF;
+  background-color: #FC6345;
+  border-radius: 10rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28rpx;
+}
+.buying-list .list-item .info .bottom .buying-status.overtime {
+  background-color: #C0C0C0;
+}
+.buying-list .list-item .info .bottom .inventory {
+  line-height: 68rpx;
+  color: #888;
+  font-size: 24rpx;
+}
