@@ -1,6 +1,5 @@
 {
   "pages": [
-    "pages/buying/buying-detail/buying-detail",
     "pages/index/index",
     "pages/buying/buying",
     "pages/search-page/search-page",
@@ -8,7 +7,8 @@
     "pages/mine/mine",
     "pages/tea-asset/tea-asset",
     "pages/storage-charge-page/storage-charge-page",
-    "pages/notification/notification"
+    "pages/notification/notification",
+    "pages/buying/buying-detail/buying-detail"    
   ],
   "window": {
     "backgroundTextStyle": "light",
